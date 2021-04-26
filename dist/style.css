@@ -222,3 +222,21 @@ body main .third-section div:last-child i {
   font-size: 30px;
   margin: 0 5px;
 }
+body main .third-section div:last-child i:first-child {
+  color: red;
+}
+body main .third-section div:last-child i:nth-child(2) {
+  color: #0b0b79;
+}
+body main .third-section div:last-child i:nth-child(3) {
+  color: #00B0FF;
+}
+body main .third-section div:last-child i:nth-child(4) {
+  color: #df0808;
+}
+body main .third-section div:last-child i:nth-child(5) {
+  color: #b60707;
+}
+body main .third-section div:last-child i:last-child {
+  color: #3131a1;
+}
