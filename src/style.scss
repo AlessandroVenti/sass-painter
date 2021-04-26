@@ -24,17 +24,13 @@ a {
 }
 
 body {
-     height: 100vh;
-
      nav {
           background-color: black;
           padding: $padding;
-
           div {
                display: $flex;
                justify-content: flex-end;
                height: 50px;
-
                ul {
                     li{
                          @include liRules();
@@ -80,9 +76,7 @@ body {
                          }
                     }
                }
-                             
           }
-
      }
 
      header {
@@ -132,9 +126,6 @@ body {
                     border: 1px solid black;
                     color: black;
                }
-
-
-
           }
      }
 
@@ -153,7 +144,7 @@ body {
                     flex-direction: row;
                     justify-content: space-around;
 
-                    div.square {
+                    square {
                          @include flexColumn();
                          background-color: white;
                     }
@@ -308,10 +299,7 @@ body {
                          color: rgb(49, 49, 161);
                     }
                }
-
-               
-          }
-         
+          }         
      }
 
      footer {
@@ -335,7 +323,6 @@ body {
                ul {
 
                     li{
-
                          display: inline-block;
 
                          a {
@@ -347,7 +334,7 @@ body {
                     li:last-child {
 
                          a {
-                         color: white;
+                              color: white;
                          }
                     }
                }

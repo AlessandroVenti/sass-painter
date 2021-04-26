@@ -9,9 +9,6 @@ a {
   text-decoration: none;
 }
 
-body {
-  height: 100vh;
-}
 body nav {
   background-color: black;
   padding: 0 20%;
@@ -116,7 +113,7 @@ body main .first-section .images {
   flex-direction: row;
   justify-content: space-around;
 }
-body main .first-section .images div.square {
+body main .first-section .images square {
   display: flex;
   flex-direction: column;
   background-color: white;
