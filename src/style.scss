@@ -1,8 +1,89 @@
+$flex : flex;
+$padding: 0 20%;
+$iColor : #00B0FF;
+
+@mixin flexColumn {
+     display: flex;
+     flex-direction: column;
+}
+
+@mixin liRules {
+     display: inline-block;
+     padding: 0 10px;
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     list-style-type: none;
+}
+
+a {
+     text-decoration: none;
+}
+
 body {
      background-color: purple;
      height: 100vh;
 
-     h1 {
-          color: orange;
+     nav {
+          background-color: black;
+          padding: $padding;
+
+          div {
+               display: $flex;
+               justify-content: flex-end;
+               height: 50px;
+
+               ul {
+                    li{
+                         @include liRules();
+                         i {
+                              color: $iColor;
+                         }
+
+                         span {
+                              color: grey;
+                         }
+
+                         select {
+                              margin-top: 10px;
+                         }
+                    }
+               }
+          }
+
+          ul {
+               display: $flex;
+               justify-content: flex-start;
+               color: white;
+               padding-bottom: 10px;
+
+               li{
+                    @include liRules();
+
+                    img{
+                         height: 25px;
+                    }
+     
+                    span {
+                         vertical-align: -webkit-baseline-middle;
+                    }
+     
+                    a{
+                         vertical-align: -webkit-baseline-middle;
+                         color: white;
+
+                         i{
+                              vertical-align: bottom;
+                              color: grey;
+                         }
+                    }
+               }
+               
+               
+          }
+
      }
 }
