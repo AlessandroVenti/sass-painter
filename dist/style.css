@@ -102,7 +102,7 @@ body header .jumbotron button:last-child {
   color: black;
 }
 body main {
-  background-color: grey;
+  background-color: darkgrey;
   padding: 20px 0;
 }
 body main .first-section {
@@ -139,4 +139,57 @@ body main .first-section .images div p {
 }
 body main .first-section .images div span:first-child, body main .first-section .images div p, body main .first-section .images div a {
   margin: 10px;
+}
+body main .second-section {
+  padding: 0 20%;
+  margin: 50px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+body main .second-section div {
+  flex-basis: 50%;
+  height: 250px;
+  background-color: white;
+  padding: 40px 20px;
+  color: white;
+}
+body main .second-section div p {
+  margin: 25px 0;
+}
+body main .second-section div button {
+  padding: 10px;
+}
+body main .second-section div:first-child {
+  background-color: #0b0b79;
+  color: white;
+}
+body main .second-section div:nth-child(2) {
+  background-image: url(img/wacom-painter.jpg);
+  background-size: cover;
+  position: relative;
+}
+body main .second-section div:nth-child(2) img {
+  width: 350px;
+  height: auto;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+}
+body main .second-section div:nth-child(3) {
+  background-image: url(img/painter-master.jpg);
+  background-size: cover;
+  background-position: center;
+}
+body main .second-section div:nth-child(4) {
+  background-color: grey;
+}
+body main .second-section div:nth-child(5) {
+  background-color: #00B0FF;
+}
+body main .second-section div:nth-child(6) {
+  background-image: url(img/business-education.jpg);
+  background-size: cover;
+  background-position: center;
 }
