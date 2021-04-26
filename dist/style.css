@@ -10,7 +10,6 @@ a {
 }
 
 body {
-  background-color: purple;
   height: 100vh;
 }
 body nav {
@@ -26,7 +25,7 @@ body nav div ul li {
   display: inline-block;
   padding: 0 10px;
 }
-body nav div ul li i {
+body nav div ul li i.fas {
   color: #00B0FF;
 }
 body nav div ul li span {
@@ -58,4 +57,46 @@ body nav ul li a {
 body nav ul li a i {
   vertical-align: bottom;
   color: grey;
+}
+body header {
+  background-color: gold;
+  background-image: url(/images/bg-painter-home.jpg?4a1f2090e3cf4d0ad188b99adeb6cd44);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body header .jumbotron {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin: 0 20%;
+  padding: 50px 0;
+}
+body header .jumbotron img {
+  height: 50px;
+  width: auto;
+}
+body header .jumbotron p {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+body header .jumbotron h3, body header .jumbotron a {
+  color: plum;
+}
+body header .jumbotron button {
+  padding: 10px;
+  margin: 20px 20px 20px 0;
+  font-size: 15px;
+}
+body header .jumbotron button:first-child {
+  background-color: black;
+  border: 0;
+  color: white;
+}
+body header .jumbotron button:last-child {
+  background-color: transparent;
+  border: 0;
+  color: white;
+  border: 1px solid black;
+  color: black;
 }

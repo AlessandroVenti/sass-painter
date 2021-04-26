@@ -24,7 +24,6 @@ a {
 }
 
 body {
-     background-color: purple;
      height: 100vh;
 
      nav {
@@ -39,7 +38,7 @@ body {
                ul {
                     li{
                          @include liRules();
-                         i {
+                         i.fas {
                               color: $iColor;
                          }
 
@@ -81,9 +80,61 @@ body {
                          }
                     }
                }
-               
-               
+                             
           }
 
      }
+
+     header {
+          background-color: gold;
+          background-image: url(../dist/img/bg-painter-home.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+
+          .jumbotron {
+               @include flexColumn();
+               align-items: flex-start;
+               justify-content: flex-start;
+               margin: 0 20%;
+               padding: 50px 0;
+
+               img{
+                    height: 50px;
+                    width: auto;
+               }
+
+               p{
+                    margin-top: 20px;
+                    margin-bottom: 50px;
+               }
+
+               h3,a {
+                    color: plum;
+               }
+
+               button {
+                    padding: 10px;
+                    margin: 20px 20px 20px 0;
+                    font-size: 15px;
+               }
+
+               button:first-child {
+                    background-color: black;
+                    border: 0;
+                    color: white;
+               }
+
+               button:last-child {
+                    background-color: transparent;
+                    border: 0;
+                    color: white;
+                    border: 1px solid black;
+                    color: black;
+               }
+
+
+
+          }
+     }
+
 }
