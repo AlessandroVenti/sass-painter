@@ -314,4 +314,44 @@ body {
          
      }
 
-}
+     footer {
+          background-color: black;
+          display: $flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: $padding;
+          padding-top: 10px;
+          padding-bottom: 10px;
+
+          div {
+
+               img{
+                    margin: 0 10px;
+               }
+          }
+
+          div:last-child {
+
+               ul {
+
+                    li{
+
+                         display: inline-block;
+
+                         a {
+                              color: grey;
+                              margin: 0 10px;
+                         }
+                    }
+
+                    li:last-child {
+
+                         a {
+                         color: white;
+                         }
+                    }
+               }
+          }
+     }
+}  
+

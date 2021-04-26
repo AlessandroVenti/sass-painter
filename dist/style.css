@@ -240,3 +240,25 @@ body main .third-section div:last-child i:nth-child(5) {
 body main .third-section div:last-child i:last-child {
   color: #3131a1;
 }
+body footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+body footer div img {
+  margin: 0 10px;
+}
+body footer div:last-child ul li {
+  display: inline-block;
+}
+body footer div:last-child ul li a {
+  color: grey;
+  margin: 0 10px;
+}
+body footer div:last-child ul li:last-child a {
+  color: white;
+}
