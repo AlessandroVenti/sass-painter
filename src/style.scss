@@ -139,7 +139,7 @@ body {
      }
 
      main {
-          background-color: darkgrey;
+          background-color: rgb(226, 226, 226);
           padding: 20px 0;
 
           .first-section {
@@ -249,7 +249,45 @@ body {
                }
           }
 
-          
+          .third-section {
+               padding: $padding;
+
+               div {
+                    display: $flex;
+                    justify-content: space-around;
+
+                    ul {
+                         flex-basis: calc(100% / 4);
+                         padding: 0 20px;
+                         color: grey;
+     
+                         li:first-child {
+                              margin-bottom: 20px;
+                         }
+     
+                         li {
+                              margin-bottom: 10px;
+                         }
+     
+                         a {
+                              color: grey;
+                         }
+                    }
+               }
+
+               div:last-child {
+                    display: flex;
+                    justify-content: flex-end;
+
+                    i {
+                         font-size: 30px;
+                         margin: 0 5px;
+                    }
+               }
+
+               
+          }
+         
      }
 
 }

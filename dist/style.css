@@ -102,7 +102,7 @@ body header .jumbotron button:last-child {
   color: black;
 }
 body main {
-  background-color: darkgrey;
+  background-color: #e2e2e2;
   padding: 20px 0;
 }
 body main .first-section {
@@ -192,4 +192,33 @@ body main .second-section div:nth-child(6) {
   background-image: url(img/business-education.jpg);
   background-size: cover;
   background-position: center;
+}
+body main .third-section {
+  padding: 0 20%;
+}
+body main .third-section div {
+  display: flex;
+  justify-content: space-around;
+}
+body main .third-section div ul {
+  flex-basis: calc(100% / 4);
+  padding: 0 20px;
+  color: grey;
+}
+body main .third-section div ul li:first-child {
+  margin-bottom: 20px;
+}
+body main .third-section div ul li {
+  margin-bottom: 10px;
+}
+body main .third-section div ul a {
+  color: grey;
+}
+body main .third-section div:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+body main .third-section div:last-child i {
+  font-size: 30px;
+  margin: 0 5px;
 }
