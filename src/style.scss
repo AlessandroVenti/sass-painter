@@ -87,8 +87,9 @@ body {
 
      header {
           background-color: gold;
-          background-image: url(../dist/img/bg-painter-home.jpg);
+          background-image: url(img/bg-painter-home.jpg);
           background-position: center;
+          background-size: cover;
           background-repeat: no-repeat;
 
           .jumbotron {
@@ -135,6 +136,55 @@ body {
 
 
           }
+     }
+
+     main {
+          background-color: grey;
+          padding: 20px 0;
+
+          .first-section {
+               @include flexColumn();
+               text-align: center;
+               padding: $padding;
+               
+
+               .images {
+                    display: $flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+
+                    div.square {
+                         @include flexColumn();
+                         background-color: white;
+                    }
+
+                    img {
+                         height: 150px;
+                         width: auto;
+                    }
+
+                    div {
+                         text-align: left;
+                         padding-bottom: 20px;
+
+                         span:first-child {
+                              color: $iColor;
+                         }
+
+                         p {
+                              color: grey;
+                              margin: 5px 0;
+                              width: 50%;
+                         }    
+
+                         span:first-child, p, a {
+                              margin:  10px;
+                         }
+                    }
+               }
+          }
+
+          
      }
 
 }

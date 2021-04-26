@@ -60,8 +60,9 @@ body nav ul li a i {
 }
 body header {
   background-color: gold;
-  background-image: url(/images/bg-painter-home.jpg?4a1f2090e3cf4d0ad188b99adeb6cd44);
+  background-image: url(img/bg-painter-home.jpg);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 body header .jumbotron {
@@ -99,4 +100,43 @@ body header .jumbotron button:last-child {
   color: white;
   border: 1px solid black;
   color: black;
+}
+body main {
+  background-color: grey;
+  padding: 20px 0;
+}
+body main .first-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 20%;
+}
+body main .first-section .images {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body main .first-section .images div.square {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+body main .first-section .images img {
+  height: 150px;
+  width: auto;
+}
+body main .first-section .images div {
+  text-align: left;
+  padding-bottom: 20px;
+}
+body main .first-section .images div span:first-child {
+  color: #00B0FF;
+}
+body main .first-section .images div p {
+  color: grey;
+  margin: 5px 0;
+  width: 50%;
+}
+body main .first-section .images div span:first-child, body main .first-section .images div p, body main .first-section .images div a {
+  margin: 10px;
 }
